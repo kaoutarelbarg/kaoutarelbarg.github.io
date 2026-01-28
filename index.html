@@ -2,267 +2,143 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevGuide - Le Guide des Langages de Programmation</title>
+    <title>Portfolio – Kaoutar el barg</title>
+
+    <!-- CSS EXTERNE -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg">
-    
+
+    <!-- CSS INTERNE -->
     <style>
-        .contact-details {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        .contact-details p {
-            margin: 10px 0;
-            padding: 8px 0;
-            border-bottom: 1px dashed #ddd;
-        }
-        
-        .contact-details i {
-            color: #3949ab;
-            margin-right: 10px;
-            width: 20px;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .main-title {
-            animation: fadeIn 1s ease-out;
+        h1 {
+            background-color: #0a3d62;
+            color: white;
+            padding: 20px 30px;
+            border-radius: 20px;
+            text-shadow: 2px 2px 6px black;
         }
     </style>
 </head>
-<body>
-    <a href="#accueil" id="back-to-top" class="back-to-top-btn">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-    <header id="accueil">
-        <div class="header-content">
-            <div class="profile-photo-container">
-                <div class="profile-photo" style="background-image: url('images/kaoutar elbarg.jpeg'); background-size: cover; background-position: center;"></div>
-                <div class="photo-frame"></div>
-            </div>
-            <h1 class="main-title">DevGuide</h1>
-            <p class="subtitle">Le Guide Complet des Langages de Programmation</p>
-            <p class="author">par Kaoutar Elbarg</p>
-            
-            <div class="stats-container">
-                <div class="stat">
-                    <span class="stat-icon"><i class="fas fa-code"></i></span>
-                    <span class="stat-label">Langages analysés</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-icon"><i class="fas fa-book-open"></i></span>
-                    <span class="stat-label">Ressources gratuites</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-icon"><i class="fas fa-calendar-alt"></i></span>
-                    <span class="stat-label">Mise à jour 2025</span>
-                </div>
-            </div>
-        </div>
 
-        <div class="qr-code-container">
-            <div class="qr-code">
-                <div class="qr-code-image">
-                    <img src="images/frame.png" alt="QR Code GitHub" style="width: 100%; height: 100%; object-fit: contain;">
-                </div>
-                <p class="qr-label">Voir mes projets</p>
-            </div>
-        </div>
+<body id="top">
+
+    <!-- HEADER -->
+    <header>
+        <img src="images/kaoutar elbarg.jpeg" alt="Photo de Kaoutar el barg" class="profile-pic">
+        <h1>Kaoutar el barg – Portfolio</h1>
+        <p>Étudiante • Développeuse Frontend Débutante</p>
     </header>
 
+    <!-- QR CODE -->
+    <aside class="qrcode">
+        <img src="images/frame.png" alt="QR Code GitHub">
+    </aside>
+
+    <!-- MENU -->
     <nav>
-        <ul class="nav-list">
-            <li><a href="#accueil"><i class="fas fa-home"></i> Accueil</a></li>
-            <li><a href="#comparaison"><i class="fas fa-balance-scale"></i> Comparaison</a></li>
-            <li><a href="#choisir"><i class="fas fa-hand-pointer"></i> Comment Choisir</a></li>
-            <li><a href="#tendances"><i class="fas fa-chart-line"></i> Tendances</a></li>
-            <li><a href="#ressources"><i class="fas fa-book"></i> Ressources</a></li>
-            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        <ul class="menu">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#table">Tableau</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
+    <!-- CONTENU PRINCIPAL -->
     <main>
-        <section id="introduction" class="intro-section">
+
+        <!-- A PROPOS -->
+        <section id="about">
+            <h2>À propos de moi</h2>
+            <p>
+                Je suis étudiante en informatique, passionnée par le développement web
+                et les nouvelles technologies.
+            </p>
+        </section>
+
+        <!-- COMPETENCES -->
+        <section id="skills">
+            <h2>Compétences</h2>
             <article>
-                <h2>Bienvenue dans le monde de la programmation</h2>
-                <p>Ce guide vous aide à naviguer dans l'écosystème complexe des langages de programmation. Que vous soyez débutant cherchant à apprendre votre premier langage, ou développeur expérimenté voulant élargir vos compétences, vous trouverez ici des informations utiles et pratiques.</p>
-                
-                <div class="warning-box">
-                    <h3><i class="fas fa-lightbulb"></i> Conseil important</h3>
-                    <p>Il n'existe pas de "meilleur langage" universel. Le choix dépend de vos objectifs, du domaine d'application et des préférences personnelles. Ce guide vous aide à faire un choix éclairé.</p>
-                </div>
-            </article>
-            
-            <aside class="quick-links">
-                <h3><i class="fas fa-bolt"></i> Accès rapide</h3>
                 <ul>
-                    <li><a href="#comparaison"><i class="fas fa-chevron-right"></i> Tableau comparatif</a></li>
-                    <li><a href="#choisir"><i class="fas fa-chevron-right"></i> Guide de choix</a></li>
-                    <li><a href="#tendances"><i class="fas fa-chevron-right"></i> Langages populaires 2025</a></li>
-                    <li><a href="#ressources"><i class="fas fa-chevron-right"></i> Ressources gratuites</a></li>
+                    <li>HTML5 / CSS3</li>
+                    <li>JavaScript (bases)</li>
+                    <li>Git & GitHub</li>
+                    <li>Algorithmique (bases)</li>
                 </ul>
-            </aside>
+            </article>
         </section>
 
-        <section id="choisir" class="choisir-section">
-            <h2>Comment Choisir Votre Premier Langage ?</h2>
-            
-            <div class="choix-grid">
-                <article class="choix-card">
-                    <div class="choix-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3>Développement Web</h3>
-                    <p><strong>Recommandé:</strong> JavaScript, PHP, Python</p>
-                    <p>Pour créer des sites web interactifs et dynamiques. JavaScript est indispensable pour le front-end.</p>
-                </article>
-                
-                <article class="choix-card">
-                    <div class="choix-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Applications Mobiles</h3>
-                    <p><strong>Recommandé:</strong> Swift (iOS), Kotlin (Android), JavaScript (React Native)</p>
-                    <p>Choisissez en fonction de la plateforme cible ou optez pour une solution cross-platform.</p>
-                </article>
-                
-                <article class="choix-card">
-                    <div class="choix-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3>Data Science & IA</h3>
-                    <p><strong>Recommandé:</strong> Python, R, Julia</p>
-                    <p>Python domine ce domaine grâce à ses bibliothèques spécialisées (TensorFlow, PyTorch, pandas).</p>
-                </article>
-                
-                <article class="choix-card">
-                    <div class="choix-icon">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <h3>Jeux Vidéo</h3>
-                    <p><strong>Recommandé:</strong> C#, C++, Python</p>
-                    <p>C# avec Unity pour les débutants, C++ pour les jeux AAA, Python pour le scripting.</p>
-                </article>
-            </div>
+        <!-- PROJETS -->
+        <section id="projects">
+            <h2>Mes projets</h2>
+
+            <article>
+                <h3>Mini site web</h3>
+                <p>Création d'un site statique en HTML et CSS.</p>
+            </article>
+
+            <article>
+                <h3>Mini jeu en C</h3>
+                <p>Jeu console développé en langage C.</p>
+            </article>
         </section>
 
-        <section id="ressources" class="ressources-section">
-            <h2>Ressources Gratuites pour Apprendre</h2>
-            
-            <div class="ressources-grid">
-                <div class="ressource-card">
-                    <h3><i class="fab fa-free-code-camp"></i> FreeCodeCamp</h3>
-                    <p>Plateforme complète avec certifications gratuites en développement web.</p>
-                    <a href="https://www.freecodecamp.org" target="_blank" class="ressource-link">Visiter le site</a>
-                </div>
-                
-                <div class="ressource-card">
-                    <h3><i class="fas fa-graduation-cap"></i> OpenClassrooms</h3>
-                    <p>Cours gratuits en français sur divers langages et technologies.</p>
-                    <a href="https://openclassrooms.com" target="_blank" class="ressource-link">Visiter le site</a>
-                </div>
-                
-                <div class="ressource-card">
-                    <h3><i class="fab fa-youtube"></i> YouTube</h3>
-                    <p>Chaînes recommandées: Grafikart (FR), The Net Ninja, Traversy Media.</p>
-                    <a href="https://www.youtube.com" target="_blank" class="ressource-link">Explorer</a>
-                </div>
-                
-                <div class="ressource-card">
-                    <h3><i class="fas fa-book"></i> MDN Web Docs</h3>
-                    <p>Documentation complète et fiable pour le développement web.</p>
-                    <a href="https://developer.mozilla.org" target="_blank" class="ressource-link">Visiter le site</a>
-                </div>
-            </div>
+        <!-- TABLEAU -->
+        <section id="table">
+            <h2>Résumé des projets</h2>
+
+            <table>
+                <tr>
+                    <th>Projet</th>
+                    <th>Technologie</th>
+                    <th>Niveau</th>
+                    <th>Année</th>
+                </tr>
+                <tr>
+                    <td>Portfolio</td>
+                    <td>HTML/CSS</td>
+                    <td>Débutant</td>
+                    <td>2025</td>
+                </tr>
+                <tr>
+                    <td>Mini jeu</td>
+                    <td>C</td>
+                    <td>Intermédiaire</td>
+                    <td>2024</td>
+                </tr>
+            </table>
         </section>
 
-        <section id="contact" class="contact-section">
-            <h2>Contact & Contribution</h2>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3><i class="fas fa-user-circle"></i> À propos de l'auteur</h3>
-                    <p>Ce guide a été créé par <strong>Kaoutar Elbarg</strong>, développeuse passionnée par l'éducation technologique.</p>
-                    <p>Mon objectif est de rendre l'apprentissage de la programmation accessible à tous.</p>
-                    
-                    <div class="contact-details">
-                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> kawtarelbarg05@gmail.com</p>
-                        <p><i class="fas fa-calendar"></i> <strong>Dernière mise à jour:</strong> Janvier 2025</p>
-                        <p><i class="fas fa-map-marker-alt"></i> <strong>Localisation:</strong> Casablanca, Maroc</p>
-                    </div>
-                </div>
-                
-                <div class="contact-actions">
-                    <a href="mailto:kawtarelbarg05@gmail.com" class="email-btn">
-                        <i class="fas fa-paper-plane"></i> Envoyer un email à Kaoutar
-                    </a>
-                    
-                    <p class="contact-note">N'hésitez pas à me contacter pour des suggestions d'amélioration de ce guide ou pour partager vos expériences d'apprentissage.</p>
-                </div>
-            </div>
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <!-- CSS INLINE -->
+            <a href="mailto:Kawtarelbarg05@gmail.com">
+                <button style="background-color:#27ae60;color:white;">
+                    📧 M'envoyer un e-mail
+                </button>
+            </a>
         </section>
+
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <div class="copyright">
-                    <p id="copyright-text">© 2025 Kaoutar Elbarg - DevGuide</p>
-                </div>
-                
-                <div class="ascii-art">
-                    <pre>
-  _  __     _          _       _     
- | |/ /    | |        | |     | |    
- | ' / __ _| |__  _ __| |_   _| |__  
- |  &lt;/ _` | '_ \| '__| | | | | '_ \ 
- | . \ (_| | |_) | |  | | |_| | |_) |
- |_|\_\__,_|_.__/|_|  |_|\__,_|_.__/ 
-                    </pre>
-                </div>
-                
-                <div class="footer-links">
-                    <a href="#accueil">Accueil</a> | 
-                    <a href="#comparaison">Comparaison</a> | 
-                    <a href="#ressources">Ressources</a> | 
-                    <a href="#contact">Contact</a>
-                </div>
-                
-                <p class="footer-note">Ce site est un projet éducatif. Les données sont basées sur des enquêtes 2024 et peuvent évoluer.</p>
-            </div>
-        </div>
-    </footer>
+    <!-- BOUTON RETOUR EN HAUT -->
+    <a href="#top" class="top-btn">⬆</a>
 
-    <script>
-        const backToTopButton = document.getElementById('back-to-top');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.style.opacity = '1';
-                backToTopButton.style.visibility = 'visible';
-            } else {
-                backToTopButton.style.opacity = '0';
-                backToTopButton.style.visibility = 'hidden';
-            }
-        });
-        
-        document.addEventListener('DOMContentLoaded', () => {
-            const copyrightElement = document.getElementById('copyright-text');
-            const currentYear = new Date().getFullYear();
-            copyrightElement.textContent = `© ${currentYear} Kaoutar Elbarg - DevGuide`;
-        });
-    </script>
+    <!-- FOOTER -->
+    <footer>
+        <p id="copyright">© Kaoutar el barg – Portfolio</p>
+    </footer>
+    <pre>
+ ██╗  ██╗ █████╗  ██████╗ ██╗   ██╗████████╗ █████╗ ██████╗ 
+ ██║ ██╔╝██╔══██╗██╔═══██╗██║   ██║╚══██╔══╝██╔══██╗██╔══██╗
+ █████╔╝ ███████║██║   ██║██║   ██║   ██║   ███████║██████╔╝
+ ██╔═██╗ ██╔══██║██║   ██║██║   ██║   ██║   ██╔══██║██╔══██╗
+ ██║  ██╗██║  ██║╚██████╔╝╚██████╔╝   ██║   ██║  ██║██║  ██║
+ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝
+    </pre>
+
 </body>
 </html>
