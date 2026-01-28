@@ -5,6 +5,10 @@ body {
     background-color: #f1f7fd;
     color: #2c2c2c;
 }
+
+/* =====================
+   HEADER
+===================== */
 header {
     text-align: center;
     padding: 40px 20px;
@@ -19,6 +23,9 @@ header {
     box-shadow: 0 6px 16px rgba(0,0,0,0.4);
 }
 
+/* =====================
+   NAVIGATION MENU
+===================== */
 nav {
     background-color: #0a3d62;
 }
@@ -46,6 +53,9 @@ nav {
     color: #74b9ff;
 }
 
+/* =====================
+   SECTIONS
+===================== */
 section {
     background-color: white;
     margin: 30px;
@@ -59,6 +69,10 @@ section h2 {
     border-left: 6px solid #1e90ff;
     padding-left: 12px;
 }
+
+/* =====================
+   ARTICLES
+===================== */
 article {
     margin-top: 15px;
     padding: 15px;
@@ -66,6 +80,10 @@ article {
     border-radius: 12px;
     border-left: 4px solid #74b9ff;
 }
+
+/* =====================
+   TABLE
+===================== */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -124,6 +142,9 @@ tr:nth-child(even) {
     background-color: #0a3d62;
 }
 
+/* =====================
+   FOOTER
+===================== */
 footer {
     background-color: #0a3d62;
     color: white;
