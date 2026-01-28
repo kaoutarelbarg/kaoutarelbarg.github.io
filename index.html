@@ -9,11 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg">
     
-    <!-- CSS Interne (Style dans la balise head) -->
     <style>
-        /* CSS interne pour la section de contact */
         .contact-details {
             background-color: #f8f9fa;
             padding: 20px;
@@ -34,7 +32,6 @@
             width: 20px;
         }
         
-        /* Animation pour le titre */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -46,17 +43,12 @@
     </style>
 </head>
 <body>
-    <!-- Bouton retour en haut -->
     <a href="#accueil" id="back-to-top" class="back-to-top-btn">
         <i class="fas fa-arrow-up"></i>
     </a>
-
-    <!-- En-tête avec photo et titre -->
     <header id="accueil">
         <div class="header-content">
             <div class="profile-photo-container">
-                <!-- PHOTO DE KAOUTAR (à remplacer par votre vraie photo) -->
-                <!-- Style inline pour la photo -->
                 <div class="profile-photo" style="background-image: url('images/kaoutar elbarg.jpeg'); background-size: cover; background-position: center;"></div>
                 <div class="photo-frame"></div>
             </div>
@@ -64,7 +56,6 @@
             <p class="subtitle">Le Guide Complet des Langages de Programmation</p>
             <p class="author">par Kaoutar Elbarg</p>
             
-            <!-- Statistiques modifiées (sans nombres) -->
             <div class="stats-container">
                 <div class="stat">
                     <span class="stat-icon"><i class="fas fa-code"></i></span>
@@ -80,11 +71,6 @@
                 </div>
             </div>
         </div>
-        
-        <!-- QR Code positionné en absolu -->
-        <a href="#accueil" id="back-to-top" class="back-to-top-btn">
-        <i class="fas fa-arrow-up"></i>
-        </a>
 
         <div class="qr-code-container">
             <div class="qr-code">
@@ -96,7 +82,6 @@
         </div>
     </header>
 
-    <!-- Navigation -->
     <nav>
         <ul class="nav-list">
             <li><a href="#accueil"><i class="fas fa-home"></i> Accueil</a></li>
@@ -109,13 +94,12 @@
     </nav>
 
     <main>
-        <!-- Section d'introduction -->
         <section id="introduction" class="intro-section">
             <article>
                 <h2>Bienvenue dans le monde de la programmation</h2>
                 <p>Ce guide vous aide à naviguer dans l'écosystème complexe des langages de programmation. Que vous soyez débutant cherchant à apprendre votre premier langage, ou développeur expérimenté voulant élargir vos compétences, vous trouverez ici des informations utiles et pratiques.</p>
                 
-                <div class="warning-box" style="background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 20px 0; border-radius: 0 5px 5px 0;">
+                <div class="warning-box">
                     <h3><i class="fas fa-lightbulb"></i> Conseil important</h3>
                     <p>Il n'existe pas de "meilleur langage" universel. Le choix dépend de vos objectifs, du domaine d'application et des préférences personnelles. Ce guide vous aide à faire un choix éclairé.</p>
                 </div>
@@ -132,115 +116,12 @@
             </aside>
         </section>
 
-        <!-- Section Comparaison avec tableau -->
-        <section id="comparaison" class="comparaison-section">
-            <h2>Comparaison des Langages de Programmation</h2>
-            <p class="section-subtitle">Analyse détaillée des principaux langages (note sur 10)</p>
-            
-            <!-- Tableau -->
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Langage</th>
-                            <th>Création</th>
-                            <th>Niveau</th>
-                            <th>Web</th>
-                            <th>Mobile</th>
-                            <th>Data Science</th>
-                            <th>Salaire moyen</th>
-                            <th>Note globale</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Python</strong></td>
-                            <td>1991</td>
-                            <td>Débutant</td>
-                            <td>7/10</td>
-                            <td>5/10</td>
-                            <td>10/10</td>
-                            <td>55k€</td>
-                            <td>9.2/10</td>
-                        </tr>
-                        <tr>
-                            <td><strong>JavaScript</strong></td>
-                            <td>1995</td>
-                            <td>Intermédiaire</td>
-                            <td>10/10</td>
-                            <td>8/10</td>
-                            <td>6/10</td>
-                            <td>52k€</td>
-                            <td>9.0/10</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Java</strong></td>
-                            <td>1995</td>
-                            <td>Intermédiaire</td>
-                            <td>7/10</td>
-                            <td>9/10 (Android)</td>
-                            <td>5/10</td>
-                            <td>58k€</td>
-                            <td>8.5/10</td>
-                        </tr>
-                        <tr>
-                            <td><strong>C#</strong></td>
-                            <td>2000</td>
-                            <td>Intermédiaire</td>
-                            <td>8/10</td>
-                            <td>8/10</td>
-                            <td>6/10</td>
-                            <td>56k€</td>
-                            <td>8.3/10</td>
-                        </tr>
-                        <tr>
-                            <td><strong>PHP</strong></td>
-                            <td>1995</td>
-                            <td>Débutant</td>
-                            <td>9/10</td>
-                            <td>3/10</td>
-                            <td>4/10</td>
-                            <td>48k€</td>
-                            <td>7.8/10</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Swift</strong></td>
-                            <td>2014</td>
-                            <td>Débutant</td>
-                            <td>4/10</td>
-                            <td>10/10 (iOS)</td>
-                            <td>3/10</td>
-                            <td>62k€</td>
-                            <td>8.0/10</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-            <!-- Légende -->
-            <div class="legend">
-                <div class="legend-item">
-                    <span class="legend-color" style="background-color: #4CAF50;"></span>
-                    <span>Excellent pour ce domaine</span>
-                </div>
-                <div class="legend-item">
-                    <span class="legend-color" style="background-color: #FFC107;"></span>
-                    <span>Moyen pour ce domaine</span>
-                </div>
-                <div class="legend-item">
-                    <span class="legend-color" style="background-color: #F44336;"></span>
-                    <span>Peu adapté à ce domaine</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section Comment choisir (SANS graphique) -->
         <section id="choisir" class="choisir-section">
             <h2>Comment Choisir Votre Premier Langage ?</h2>
             
             <div class="choix-grid">
                 <article class="choix-card">
-                    <div class="choix-icon" style="background-color: #3498db;">
+                    <div class="choix-icon">
                         <i class="fas fa-globe"></i>
                     </div>
                     <h3>Développement Web</h3>
@@ -249,7 +130,7 @@
                 </article>
                 
                 <article class="choix-card">
-                    <div class="choix-icon" style="background-color: #2ecc71;">
+                    <div class="choix-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
                     <h3>Applications Mobiles</h3>
@@ -258,7 +139,7 @@
                 </article>
                 
                 <article class="choix-card">
-                    <div class="choix-icon" style="background-color: #e74c3c;">
+                    <div class="choix-icon">
                         <i class="fas fa-chart-bar"></i>
                     </div>
                     <h3>Data Science & IA</h3>
@@ -267,7 +148,7 @@
                 </article>
                 
                 <article class="choix-card">
-                    <div class="choix-icon" style="background-color: #9b59b6;">
+                    <div class="choix-icon">
                         <i class="fas fa-gamepad"></i>
                     </div>
                     <h3>Jeux Vidéo</h3>
@@ -275,79 +156,8 @@
                     <p>C# avec Unity pour les débutants, C++ pour les jeux AAA, Python pour le scripting.</p>
                 </article>
             </div>
-            
-            <!-- Section alternative à la courbe d'apprentissage -->
-            <div class="difficulty-container">
-                <h3>Facilité d'apprentissage pour débutants</h3>
-                <div class="difficulty-list">
-                    <div class="difficulty-item">
-                        <span class="difficulty-name">Python</span>
-                        <div class="difficulty-bar">
-                            <div class="difficulty-level" style="width: 90%; background-color: #4CAF50;"></div>
-                        </div>
-                        <span class="difficulty-label">Très Facile</span>
-                    </div>
-                    <div class="difficulty-item">
-                        <span class="difficulty-name">JavaScript</span>
-                        <div class="difficulty-bar">
-                            <div class="difficulty-level" style="width: 70%; background-color: #8BC34A;"></div>
-                        </div>
-                        <span class="difficulty-label">Facile</span>
-                    </div>
-                    <div class="difficulty-item">
-                        <span class="difficulty-name">Java</span>
-                        <div class="difficulty-bar">
-                            <div class="difficulty-level" style="width: 50%; background-color: #FFC107;"></div>
-                        </div>
-                        <span class="difficulty-label">Intermédiaire</span>
-                    </div>
-                    <div class="difficulty-item">
-                        <span class="difficulty-name">C++</span>
-                        <div class="difficulty-bar">
-                            <div class="difficulty-level" style="width: 30%; background-color: #F44336;"></div>
-                        </div>
-                        <span class="difficulty-label">Difficile</span>
-                    </div>
-                </div>
-            </div>
         </section>
 
-        <!-- Section Tendances -->
-        <section id="tendances" class="tendances-section">
-            <h2>Tendances 2025 & Statistiques</h2>
-            
-            <div class="trends-content">
-                <article class="trends-article">
-                    <h3><i class="fas fa-trophy"></i> Langages les plus populaires (StackOverflow Survey 2024)</h3>
-                    <ol>
-                        <li><strong>JavaScript</strong> - 65% des développeurs</li>
-                        <li><strong>Python</strong> - 48% des développeurs</li>
-                        <li><strong>Java</strong> - 35% des développeurs</li>
-                        <li><strong>C#</strong> - 31% des développeurs</li>
-                        <li><strong>PHP</strong> - 22% des développeurs</li>
-                    </ol>
-                </article>
-                
-                <aside class="trends-aside">
-                    <h3><i class="fas fa-bullseye"></i> Langages en croissance</h3>
-                    <ul>
-                        <li><strong>Rust</strong> (+15% d'adoption)</li>
-                        <li><strong>TypeScript</strong> (+22% d'adoption)</li>
-                        <li><strong>Kotlin</strong> (+18% d'adoption)</li>
-                        <li><strong>Go</strong> (+12% d'adoption)</li>
-                    </ul>
-                </aside>
-            </div>
-            
-            <!-- Bouton d'action -->
-            <div class="action-box">
-                <h3>Prêt à commencer ?</h3>
-                <p>Choisissez un langage et commencez à apprendre dès aujourd'hui !</p>
-                <a href="#ressources" class="action-btn">Voir les ressources gratuites <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </section>
-
-        <!-- Section Ressources -->
         <section id="ressources" class="ressources-section">
             <h2>Ressources Gratuites pour Apprendre</h2>
             
@@ -378,7 +188,6 @@
             </div>
         </section>
 
-        <!-- Section Contact -->
         <section id="contact" class="contact-section">
             <h2>Contact & Contribution</h2>
             
@@ -388,7 +197,6 @@
                     <p>Ce guide a été créé par <strong>Kaoutar Elbarg</strong>, développeuse passionnée par l'éducation technologique.</p>
                     <p>Mon objectif est de rendre l'apprentissage de la programmation accessible à tous.</p>
                     
-                    <!-- Utilisation de CSS interne défini dans le head -->
                     <div class="contact-details">
                         <p><i class="fas fa-envelope"></i> <strong>Email:</strong> kawtarelbarg05@gmail.com</p>
                         <p><i class="fas fa-calendar"></i> <strong>Dernière mise à jour:</strong> Janvier 2025</p>
@@ -397,7 +205,6 @@
                 </div>
                 
                 <div class="contact-actions">
-                    <!-- Bouton email -->
                     <a href="mailto:kawtarelbarg05@gmail.com" class="email-btn">
                         <i class="fas fa-paper-plane"></i> Envoyer un email à Kaoutar
                     </a>
@@ -408,18 +215,15 @@
         </section>
     </main>
 
-    <!-- Pied de page -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <div class="copyright">
-                    <!-- Style inline pour le copyright -->
-                    <p id="copyright-text" style="color: #ffeb3b; font-weight: bold; font-size: 1.2rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">© 2025 Kaoutar Elbarg - DevGuide</p>
+                    <p id="copyright-text">© 2025 Kaoutar Elbarg - DevGuide</p>
                 </div>
                 
-                <!-- ASCII Art -->
                 <div class="ascii-art">
-                    <pre style="font-family: 'Courier New', monospace; color: #bbdefb; line-height: 1.2;">
+                    <pre>
   _  __     _          _       _     
  | |/ /    | |        | |     | |    
  | ' / __ _| |__  _ __| |_   _| |__  
@@ -441,9 +245,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript pour les interactions -->
     <script>
-        // Script pour le bouton retour en haut
         const backToTopButton = document.getElementById('back-to-top');
         
         window.addEventListener('scroll', () => {
@@ -456,21 +258,10 @@
             }
         });
         
-        // Mise à jour dynamique de l'année du copyright
         document.addEventListener('DOMContentLoaded', () => {
             const copyrightElement = document.getElementById('copyright-text');
             const currentYear = new Date().getFullYear();
             copyrightElement.textContent = `© ${currentYear} Kaoutar Elbarg - DevGuide`;
-            
-            // Animation pour les barres de difficulté
-            const difficultyLevels = document.querySelectorAll('.difficulty-level');
-            difficultyLevels.forEach(bar => {
-                const width = bar.style.width;
-                bar.style.width = '0';
-                setTimeout(() => {
-                    bar.style.width = width;
-                }, 500);
-            });
         });
     </script>
 </body>
