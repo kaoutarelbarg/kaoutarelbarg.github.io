@@ -1,6 +1,3 @@
-/* ===== STYLES EXTERNES (fichier CSS) ===== */
-
-/* Reset et styles de base */
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +14,6 @@ body {
     padding: 0 20px;
 }
 
-/* Styles pour l'en-tête */
 header {
     background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
     color: white;
@@ -53,7 +49,6 @@ header {
     font-size: 60px;
     color: white;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    /* L'image sera appliquée via style inline */
     background-size: cover;
     background-position: center;
 }
@@ -68,17 +63,16 @@ header {
     border-radius: 50%;
 }
 
-/* Styles pour le titre principal avec ombre et border-radius */
 .main-title {
     font-family: 'Source Code Pro', monospace;
     font-size: 3.5rem;
     margin: 15px 0;
     color: white;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.3); /* Couleur différente du fond */
+    background-color: rgba(0, 0, 0, 0.3);
     display: inline-block;
     padding: 10px 40px;
-    border-radius: 20px; /* Border-radius pour arrondir les coins */
+    border-radius: 20px;
     letter-spacing: 1px;
 }
 
@@ -118,7 +112,6 @@ header {
     opacity: 0.9;
 }
 
-/* QR Code positionné en absolu */
 .qr-code-container {
     position: absolute;
     top: 20px;
@@ -138,7 +131,7 @@ header {
 .qr-code-image {
     width: 100px;
     height: 100px;
-    background: #f5f5f5;
+    background: white;
     margin: 0 auto 10px;
     border-radius: 5px;
     position: relative;
@@ -148,29 +141,6 @@ header {
     justify-content: center;
 }
 
-.qr-pattern {
-    width: 80%;
-    height: 80%;
-    background: repeating-linear-gradient(
-        0deg,
-        #000 0, #000 5px,
-        transparent 5px, transparent 10px
-    ),
-    repeating-linear-gradient(
-        90deg,
-        #000 0, #000 5px,
-        transparent 5px, transparent 10px
-    );
-    opacity: 0.7;
-}
-
-.qr-text {
-    position: absolute;
-    font-weight: bold;
-    color: #333;
-    font-size: 14px;
-}
-
 .qr-label {
     font-size: 0.8rem;
     color: #333;
@@ -178,7 +148,6 @@ header {
     font-weight: 600;
 }
 
-/* Navigation */
 nav {
     background-color: #fff;
     border-radius: 10px;
@@ -224,7 +193,6 @@ nav {
     color: #3949ab;
 }
 
-/* Sections principales */
 section {
     background-color: white;
     border-radius: 15px;
@@ -242,51 +210,7 @@ h2 {
     font-size: 2.2rem;
 }
 
-.section-subtitle {
-    color: #666;
-    margin-bottom: 25px;
-    font-size: 1.1rem;
-}
-
-/* Tableau */
-.table-container {
-    overflow-x: auto;
-    margin: 25px 0;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-
-thead {
-    background-color: #1a237e;
-    color: white;
-}
-
-th, td {
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #e0e0e0;
-}
-
-th {
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tbody tr:hover {
-    background-color: #f0f0f0;
-    transition: background-color 0.3s;
-}
-
-/* Grilles et Flexbox */
-.intro-section, .trends-content, .contact-content {
+.intro-section, .contact-content {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -305,6 +229,14 @@ tbody tr:hover {
     border-radius: 10px;
 }
 
+.warning-box {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 0 5px 5px 0;
+}
+
 .choix-grid, .ressources-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -312,7 +244,6 @@ tbody tr:hover {
     margin: 30px 0;
 }
 
-/* Cartes */
 .choix-card, .ressource-card {
     background: white;
     border-radius: 10px;
@@ -342,81 +273,22 @@ tbody tr:hover {
     color: white;
     font-size: 24px;
     margin-bottom: 15px;
+    background-color: #3498db;
 }
 
-/* Section difficulté (remplace la courbe) */
-.difficulty-container {
-    margin: 40px 0;
-    padding: 25px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-}
-
-.difficulty-list {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.difficulty-item {
-    display: flex;
-    align-items: center;
-    margin: 15px 0;
-    padding: 10px;
-}
-
-.difficulty-name {
-    width: 120px;
-    font-weight: 600;
-}
-
-.difficulty-bar {
-    flex: 1;
-    height: 20px;
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    margin: 0 20px;
-    overflow: hidden;
-}
-
-.difficulty-level {
-    height: 100%;
-    border-radius: 10px;
-    transition: width 1.5s ease;
-}
-
-.difficulty-label {
-    width: 100px;
-    text-align: right;
+.ressource-link {
+    display: inline-block;
+    background-color: #3949ab;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
     font-weight: 500;
 }
 
-/* Boutons */
-.action-box {
-    text-align: center;
-    padding: 30px;
-    background: linear-gradient(135deg, #1a237e, #3949ab);
-    color: white;
-    border-radius: 15px;
-    margin-top: 30px;
-}
-
-.action-btn {
-    display: inline-block;
-    background-color: #ffeb3b;
-    color: #333;
-    padding: 15px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    margin-top: 15px;
-    transition: all 0.3s;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.action-btn:hover {
-    background-color: #fdd835;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+.ressource-link:hover {
+    background-color: #1a237e;
 }
 
 .email-btn {
@@ -433,9 +305,9 @@ tbody tr:hover {
 
 .email-btn:hover {
     background-color: #388E3C;
-    transform: translateY(-3px)
+    transform: translateY(-3px);
 }
-/* Style pour le bouton Retour en haut */
+
 .back-to-top-btn {
     position: fixed;
     bottom: 30px;
@@ -450,7 +322,7 @@ tbody tr:hover {
     justify-content: center;
     text-decoration: none;
     z-index: 1000;
-    opacity: 0; /* Caché par défaut */
+    opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -461,13 +333,45 @@ tbody tr:hover {
     transform: translateY(-5px);
 }
 
-/* Ajustement du conteneur QR Code pour accueillir l'image */
-.qr-code-image {
-    width: 100px;
-    height: 100px;
-    background: white !important; /* Fond blanc pour le QR code */
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+footer {
+    background-color: #1a237e;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+#copyright-text {
+    color: #ffeb3b;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.ascii-art pre {
+    font-family: 'Courier New', monospace;
+    color: #bbdefb;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #bbdefb;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-note {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
