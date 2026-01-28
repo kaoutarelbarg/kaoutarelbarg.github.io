@@ -1,0 +1,473 @@
+/* ===== STYLES EXTERNES (fichier CSS) ===== */
+
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Styles pour l'en-tête */
+header {
+    background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
+    color: white;
+    padding: 40px 20px;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 30px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.header-content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-photo-container {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, #ff4081, #7b1fa2);
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    /* L'image sera appliquée via style inline */
+    background-size: cover;
+    background-position: center;
+}
+
+.photo-frame {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+
+/* Styles pour le titre principal avec ombre et border-radius */
+.main-title {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 3.5rem;
+    margin: 15px 0;
+    color: white;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3); /* Couleur différente du fond */
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 20px; /* Border-radius pour arrondir les coins */
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.author {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-icon {
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffeb3b;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* QR Code positionné en absolu */
+.qr-code-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.qr-code {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 130px;
+}
+
+.qr-code-image {
+    width: 100px;
+    height: 100px;
+    background: #f5f5f5;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-pattern {
+    width: 80%;
+    height: 80%;
+    background: repeating-linear-gradient(
+        0deg,
+        #000 0, #000 5px,
+        transparent 5px, transparent 10px
+    ),
+    repeating-linear-gradient(
+        90deg,
+        #000 0, #000 5px,
+        transparent 5px, transparent 10px
+    );
+    opacity: 0.7;
+}
+
+.qr-text {
+    position: absolute;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+.qr-label {
+    font-size: 0.8rem;
+    color: #333;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/* Navigation */
+nav {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.nav-list li {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+}
+
+.nav-list a {
+    display: block;
+    padding: 18px 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-list a:hover {
+    background-color: #f0f0f0;
+    border-bottom: 3px solid #3949ab;
+    color: #3949ab;
+}
+
+.nav-list a i {
+    margin-right: 8px;
+    color: #3949ab;
+}
+
+/* Sections principales */
+section {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-family: 'Source Code Pro', monospace;
+    color: #1a237e;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+    font-size: 2.2rem;
+}
+
+.section-subtitle {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+/* Tableau */
+.table-container {
+    overflow-x: auto;
+    margin: 25px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+    background-color: #1a237e;
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+th {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+/* Grilles et Flexbox */
+.intro-section, .trends-content, .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.intro-section article {
+    flex: 3;
+    min-width: 300px;
+}
+
+.quick-links {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.choix-grid, .ressources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+/* Cartes */
+.choix-card, .ressource-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 4px solid transparent;
+}
+
+.choix-card:hover, .ressource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.choix-card:nth-child(1) { border-top-color: #3498db; }
+.choix-card:nth-child(2) { border-top-color: #2ecc71; }
+.choix-card:nth-child(3) { border-top-color: #e74c3c; }
+.choix-card:nth-child(4) { border-top-color: #9b59b6; }
+
+.choix-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Section difficulté (remplace la courbe) */
+.difficulty-container {
+    margin: 40px 0;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.difficulty-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.difficulty-item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.difficulty-name {
+    width: 120px;
+    font-weight: 600;
+}
+
+.difficulty-bar {
+    flex: 1;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin: 0 20px;
+    overflow: hidden;
+}
+
+.difficulty-level {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1.5s ease;
+}
+
+.difficulty-label {
+    width: 100px;
+    text-align: right;
+    font-weight: 500;
+}
+
+/* Boutons */
+.action-box {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #1a237e, #3949ab);
+    color: white;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.action-btn {
+    display: inline-block;
+    background-color: #ffeb3b;
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.action-btn:hover {
+    background-color: #fdd835;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.email-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+.email-btn:hover {
+    background-color: #388E3C;
+    transform: translateY(-3px)
+}
+/* Style pour le bouton Retour en haut */
+.back-to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #3949ab;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1000;
+    opacity: 0; /* Caché par défaut */
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top-btn:hover {
+    background-color: #1a237e;
+    transform: translateY(-5px);
+}
+
+/* Ajustement du conteneur QR Code pour accueillir l'image */
+.qr-code-image {
+    width: 100px;
+    height: 100px;
+    background: white !important; /* Fond blanc pour le QR code */
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
