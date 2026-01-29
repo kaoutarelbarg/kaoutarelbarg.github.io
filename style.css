@@ -4,10 +4,6 @@ body {
     background-color: #f1f7fd;
     color: #2c2c2c;
 }
-
-/* =====================
-   HEADER
-===================== */
 header {
     text-align: center;
     padding: 40px 20px;
@@ -21,10 +17,6 @@ header {
     border: 4px solid #74b9ff;
     box-shadow: 0 6px 16px rgba(0,0,0,0.4);
 }
-
-/* =====================
-   NAVIGATION MENU
-===================== */
 nav {
     background-color: #0a3d62;
     padding: 10px 0;
@@ -58,9 +50,6 @@ nav {
     background-color: rgba(116, 185, 255, 0.1);
 }
 
-/* =====================
-   SECTIONS
-===================== */
 section {
     background-color: white;
     margin: 30px;
@@ -75,10 +64,6 @@ section h2 {
     padding-left: 12px;
     margin-top: 0;
 }
-
-/* =====================
-   ARTICLES
-===================== */
 article {
     margin-top: 15px;
     padding: 15px;
@@ -86,10 +71,6 @@ article {
     border-radius: 12px;
     border-left: 4px solid #74b9ff;
 }
-
-/* =====================
-   TABLE
-===================== */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -110,10 +91,6 @@ td, th {
 tr:nth-child(even) {
     background-color: #f1f7fd;
 }
-
-/* =====================
-   SECTION COMMENT CHOISIR
-===================== */
 .choix-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -156,10 +133,6 @@ tr:nth-child(even) {
 .choix-card:nth-child(2) .choix-icon { background-color: #2ecc71; }
 .choix-card:nth-child(3) .choix-icon { background-color: #e74c3c; }
 .choix-card:nth-child(4) .choix-icon { background-color: #9b59b6; }
-
-/* =====================
-   SECTION RESSOURCES
-===================== */
 .ressources-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -203,9 +176,6 @@ tr:nth-child(even) {
     transform: translateY(-2px);
 }
 
-/* =====================
-   QR CODE
-===================== */
 .qrcode {
     position: fixed;
     top: 20px;
@@ -221,9 +191,6 @@ tr:nth-child(even) {
     width: 95px;
 }
 
-/* =====================
-   TOP BUTTON
-===================== */
 .top-btn {
     position: fixed;
     bottom: 25px;
@@ -244,9 +211,6 @@ tr:nth-child(even) {
     transform: scale(1.1);
 }
 
-/* =====================
-   FOOTER
-===================== */
 footer {
     background-color: #0a3d62;
     color: white;
@@ -271,9 +235,6 @@ pre {
     overflow-x: auto;
 }
 
-/* =====================
-   RESPONSIVE
-===================== */
 @media (max-width: 768px) {
     .menu {
         flex-direction: column;
@@ -309,3 +270,4 @@ pre {
         font-size: 16px;
     }
 }
+
